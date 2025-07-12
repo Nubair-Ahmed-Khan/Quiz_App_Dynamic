@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded-xl shadow-md w-full max-w-xl text-center" id="quiz-container">
+    <h1 class="text-2xl font-bold mb-4 text-white">Dynamic Quiz App</h1>
+
+    <!-- Start Button -->
+    <button id="start-btn" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+      Start Quiz
+    </button>
+
+    <!-- Quiz Content -->
+    <div id="quiz-content" class="hidden">
+      <div id="question-box" class="mb-4">
+        <h2 id="question" class="text-lg font-semibold mb-2 text-white"></h2>
+        <ul class="space-y-2">
+          <li><button class="answer-btn w-full bg-gray-200 py-2 rounded"></button></li>
+          <li><button class="answer-btn w-full bg-gray-200 py-2 rounded"></button></li>
+          <li><button class="answer-btn w-full bg-gray-200 py-2 rounded"></button></li>
+          <li><button class="answer-btn w-full bg-gray-200 py-2 rounded"></button></li>
+        </ul>
+      </div>
+
+      <!-- Next Button -->
+      <button id="next-btn" class="mt-4 bg-blue-500 text-white px-5 py-2 rounded hidden">
+        Next
+      </button>
+    </div>
+
+    <!-- Result -->
+    <p id="result" class="mt-4 font-bold text-lg"></p>
+
+    <!-- Restart Button -->
+    <button id="restart-btn" class="mt-4 bg-green-600 text-white px-6 py-2 rounded hidden">
+      Restart Quiz
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
